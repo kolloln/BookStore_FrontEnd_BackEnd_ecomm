@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Book List</h2>
+  <ul class="list-group">
+    <li *ngFor="let book of books" class="list-group-item">
+      {{ book.title }} - {{ book.author }}
+      <button class="btn btn-danger btn-sm float-right" (click)="deleteBook(book.id)">
+        Delete
+      </button>
+    </li>
+  </ul>
+</div>
